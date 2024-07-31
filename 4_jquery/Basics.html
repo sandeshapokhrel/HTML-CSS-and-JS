@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Effects Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #effectDiv {
+            width: 200px;
+            height: 100px;
+            background-color: green;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>jQuery Effects Demo</h1>
+<button id="hideButton">Hide</button>
+
+<button id="showButton">Show</button>
+
+
+<button id="fadeOutButton">Fade Out</button>
+<!-- Button to fade in the div -->
+<button id="fadeInButton">Fade In</button>
+
+<!-- Button to slide up the div -->
+<button id="slideUpButton">Slide Up</button>
+<!-- Button to slide down the div -->
+<button id="slideDownButton">Slide Down</button>
+
+<!-- Button to animate the div -->
+<button id="animateButton">Animate</button>
+
+<!-- Div element to apply effects to -->
+<div id="effectDiv"></div>
+
+<script>
+    // Hide the div when the hide button is clicked
+    $("#hideButton").click(function() {
+        $("#effectDiv").hide();
+    });
+
+    // Show the div when the show button is clicked
+    $("#showButton").click(function() {
+        $("#effectDiv").show();
+    });
+
+    // Fade out the div when the fade out button is clicked
+    $("#fadeOutButton").click(function() {
+        $("#effectDiv").fadeOut();
+    });
+
+    // Fade in the div when the fade in button is clicked
+    $("#fadeInButton").click(function() {
+        $("#effectDiv").fadeIn();
+    });
+
+    // Slide up the div when the slide up button is clicked
+    $("#slideUpButton").click(function() {
+        $("#effectDiv").slideUp();
+    });
+
+    // Slide down the div when the slide down button is clicked
+    $("#slideDownButton").click(function() {
+        $("#effectDiv").slideDown();
+    });
+
+    // Animate the div when the animate button is clicked
+    $("#animateButton").click(function() {
+        $("#effectDiv").animate({
+            left: '250px',    // Move the div 250px to the right
+            opacity: '0.5',   // Change the opacity to 0.5
+            height: '+=50px', // Increase the height by 50px
+            width: '+=50px'   // Increase the width by 50px
+        });
+    });
+</script>
+
+</body>
+</html>

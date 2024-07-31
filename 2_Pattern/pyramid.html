@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function printPyramid(rows) {
+    for (let i = 1; i <= rows; i++) {
+        let space = '';
+        let star = '';
+
+        for (let j = i; j < rows; j++) {
+            space += ' ';
+        }
+
+        for (let k = 0; k < (2 * i - 1); k++) {
+            star += '*';
+        }
+
+        console.log(space + star);
+    }
+}
+
+let rows = 5;
+printPyramid(rows);
+
+    </script>
+</body>
+</html>

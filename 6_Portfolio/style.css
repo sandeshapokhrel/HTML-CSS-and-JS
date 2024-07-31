@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif ;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    color: white;
+}
+#header {
+    width: 95%;
+    height: 70vh;
+    background-image: url('Image/Me.png');
+    background-size: contain; /* Ensures the entire image is visible */
+    background-repeat: no-repeat;
+    background-position: Right 30%; /* Positions the image on the left, vertically centered */
+    align-items: center;
+}
+.container{
+    width: 100%;
+    padding: 10px 10%;
+
+}
+.navbar-brand {
+    font-size: 2rem;
+}
+.nav-link {
+    font-size: 1.2rem;
+    color: #000 !important; /* Ensure the text color is black */
+    position: relative;
+    padding-bottom: 5px;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; /* Adjust the height of the underline */
+    display: block;
+    margin-top: 5px; /* Adjust margin to ensure space from the text */
+    right: 0;
+    background: #000; /* Adjust underline color */
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+    background: #000; /* Adjust underline color on hover */
+}
+
+.nav-link:hover {
+    text-decoration: none; /* Remove default underline on hover */
+}
+.middle-text{
+    margin-top:20%;
+    font-size: 30px;
+}
+.middle-text h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.middle-text h1 span{
+    color:crimson;
+}
+.section {
+    padding: 60px 0;
+}
+
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 1200px) {
+    .middle-text {
+        font-size: 1.8rem;
+    }
+    .middle-text h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .middle-text {
+        font-size: 1.5rem;
+    }
+    .middle-text h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .middle-text {
+        font-size: 1.2rem;
+    }
+    .middle-text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .middle-text {
+        font-size: 1rem;
+    }
+    .middle-text h1 {
+        font-size: 1.2rem;
+    }
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.project {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project img {
+    max-width: 200px; /* Adjust the size as needed */
+    height: auto;
+    border: 2px solid white;
+    transition: transform 0.3s;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+.project p {
+    margin-top: 10px;
+    color: white; /* Adjust if needed to match your site's color scheme */
+    max-width: 200px; /* Adjust the size as needed */
+    text-align: center;
+}

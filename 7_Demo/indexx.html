@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Plugins Demo</title>
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <!-- Lightbox2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <script src="script.js" defer></script>
+
+        <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- DataTables -->
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <!-- Lightbox2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <!-- jQuery Validation -->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: 20px;
+        }
+        .carousel {
+            width: 50%;
+            margin: auto;
+        }
+        .carousel div {
+            text-align: center;
+        }
+        .carousel img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>jQuery Plugins Demo</h1>
+
+    <!-- jQuery UI Datepicker -->
+    <h2>Datepicker</h2>
+    <input type="text" id="datepicker">
+
+    <!-- slick Carousel -->
+    <h2>slick/Carousel</h2>
+    <div class="carousel your-class">
+        <div><img src="https://via.placeholder.com/400x200?text=Slide+1" alt="Slide 1"></div>
+        <div><img src="https://via.placeholder.com/400x200?text=Slide+2" alt="Slide 2"></div>
+        <div><img src="https://via.placeholder.com/400x200?text=Slide+3" alt="Slide 3"></div>
+    </div>
+
+    <!-- DataTables -->
+    <h2>Data Table</h2>
+    <table id="example" class="display" style="width:100%">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Age</th>
+            <th>Start date</th>
+            <th>Salary</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Tiger Nixon</td>
+            <td>System Architect</td>
+            <td>Edinburgh</td>
+            <td>61</td>
+            <td>2011/04/25</td>
+            <td>$320,800</td>
+        </tr>
+        <tr>
+            <td>Lion Nixon</td>
+            <td>System Architect</td>
+            <td>Edinburgh</td>
+            <td>61</td>
+            <td>2011/04/25</td>
+            <td>$320,800</td>
+        </tr>
+        <tr>
+            <td>Horse Nixon</td>
+            <td>System Architect</td>
+            <td>Edinburgh</td>
+            <td>61</td>
+            <td>2011/04/25</td>
+            <td>$320,800</td>
+        </tr>
+        <tr>
+            <td>Donkey Nixon</td>
+            <td>System Architect</td>
+            <td>Edinburgh</td>
+            <td>61</td>
+            <td>2011/04/25</td>
+            <td>$320,800</td>
+        </tr>
+        <tr>
+            <td>Dog Nixon</td>
+            <td>System Architect</td>
+            <td>Edinburgh</td>
+            <td>61</td>
+            <td>2011/04/25</td>
+            <td>$320,800</td>
+        </tr>
+        <!-- Additional rows here -->
+        </tbody>
+    </table>
+
+    <!-- Lightbox2 -->
+    <h2>Lightbox Gallery</h2>
+    <a href="https://via.placeholder.com/600x400?text=Image+1" data-lightbox="image-1" data-title="My caption 1">
+        <img src="https://via.placeholder.com/150x100?text=Thumb+1" alt="Thumbnail 1">
+    </a>
+    <a href="https://via.placeholder.com/600x400?text=Image+2" data-lightbox="image-1" data-title="My caption 2">
+        <img src="https://via.placeholder.com/150x100?text=Thumb+2" alt="Thumbnail 2">
+    </a>
+
+    <!-- jQuery Validation -->
+    <h2>Form Validation</h2>
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" name="field" id="email">
+        <input type="submit" value="Submit">
+        <input type="button" value="check" onclick="checkEmailValidation();">
+    </form>
+</div>
+
+
+
+
+</body>
+</html>
