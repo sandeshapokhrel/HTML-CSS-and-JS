@@ -146,3 +146,29 @@ body{
     max-width: 200px; /* Adjust the size as needed */
     text-align: center;
 }
+/* lah */
+.middle-text {
+    margin-bottom: 70px; 
+}
+
+.about {
+    margin-top: 60px; /* Add space between sections */
+}
+
+.about .col-lg-7 {
+    margin-top: 110px; /* Optional: Add space within the section if needed */
+}
+.about{
+    -webkit-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+}
+
+
+.card{
+    border:none;
+    outline:none;
+}
+.card p{
+    color:black;
+}
